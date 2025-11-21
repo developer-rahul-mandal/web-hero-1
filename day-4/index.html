@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4: HTML table & Form</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+</head>
+<body>
+    <!-- <table border="" cellspacing="0" cellpadding="5" align="center">
+        <caption>Products</caption>
+        <colgroup>
+            <col span="1" style="background-color: #fcdb67;">
+            <col span="1" style="background-color: #b86ff9;">
+            <col span="1" style="background-color: #91edf7;">
+        </colgroup>
+        <thead>
+            <tr align="center">
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total Items</td>
+                <td>45</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Apple</td>
+                <td>$1.00</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>$0.50</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Cherry</td>
+                <td>$2.00</td>
+                <td>15</td>
+            </tr>
+        </tbody>
+    </table> -->
+    <form action="" method="get" enctype="multipart/form-data" target="_blank" novalidate nonce="">
+        <!-- <label for="search">search</label>
+        <input type="search"><br> -->
+        <label for="name">skills</label>
+        <input type="text" id="name" list="skills" autocomplete="off" disabled pattern="[0-9]{10}" value="Rakesh"><br>
+        <!-- pattern: regex (regular expression) -->
+        <input type="number" name="age" min="10" max="100" required><br>
+
+        <datalist id="skills">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="JavaScript">
+            <option value="Python">
+            <option value="Django">
+        </datalist>
+        <label for="bio">Bio</label><br>
+        <textarea name="bio" id="bio" cols="30" rows="5" placeholder="Write about yourself..."></textarea><br>
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="canada">Canada</option>
+            <option value="australia">Australia</option>
+        </select><br>
+        <input type="file" name="image[]" accept="image/jpgg, image/png, image/gif" multiple required size="" ><br>
+        <label for="volume">Volume</label>
+        <input type="range" min="0" max="100" step="10" value="0" id="volume" name="volume">
+        <input type="text" autofocus placeholder="Type here..."><br>
+
+        <fieldset>
+            <legend>Card Detials</legend>
+            <input type="text" name="cardnumber" maxlength="16" placeholder="Card Number" required><br>
+            <input type="text" name="cardname" placeholder="Name on Card" required><br>
+            <input type="month" name="expdate" required><br>
+            <input type="text" name="cvv" maxlength="4" placeholder="CVV" required><br>
+        </fieldset>
+        <!-- 0, 10, 20,... -->
+        <input type="submit" value="Submit">
+    </form>
+
+    <figure>
+        <img src="./man.jpg" alt="" width="300" >
+        <figcaption>Figure Caption: A man</figcaption>
+    </figure>
+    
+</body>
+</html>

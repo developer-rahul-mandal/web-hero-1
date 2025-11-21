@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basic</title>
+    <style>
+        :root{
+            --primaryColor: #fd0000;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        /* *{}
+        p {}
+        div p{}
+        div > p {} */
+        /* h1 + p {
+            color: aqua !important;
+        }
+        h1 ~ p {
+            color: red;
+        } */
+        /* .class{}
+        #id{} */
+        /* input[name*="name"] {
+            background-color: var(--primaryColor);
+        } 
+        input[name^="name"] {
+            background-color: var(--primaryColor);
+        } 
+        input[name$="name"] {
+            background-color: var(--primaryColor);
+        }  */
+        /* .btn {
+            background-color: #fe000f;
+            border: none;
+            color: #fff;
+            padding: 10px 15px;
+        } */
+        /* applied when hover */
+        /* .btn:hover {
+            border: 2px solid var(--primaryColor);
+            background-color: transparent;
+            color: var(--primaryColor);
+        } */
+         /* applied when click */
+        /* .btn:active {
+            border: 2px solid var(--primaryColor);
+            background-color: transparent;
+            color: var(--primaryColor);
+        } */
+        /* input[name="username"]:focus {
+            background: #000;
+            color: #fff;
+        }
+        input:disabled {
+            background-color: #5d86f5;
+        }
+
+        input:enabled {
+            background-color: #4df437;
+        }
+
+        input[id="m"]:checked {
+            display: none;
+        }
+        input[id="f"]:checked {
+            display: none;
+        } */
+        /* *:not(.username) {
+            background: #000;
+        } */
+        p:first-child {
+            /* background: #000; */
+            color: red;
+        }
+        p:last-child {
+            color: blueviolet;
+        }
+        p:nth-child(2n+1) {
+            color: aqua;
+        }
+        a:visited {
+            color: #fd0000;
+        }
+        .box {
+            height: 100vh;
+            width: 100vw;
+        }
+        .box:nth-child(1) {
+            background-color: #e1fb4b;
+        }
+        .box:nth-child(2) {
+            background-color: #73b4fa;
+        }
+        #secondBox:target {
+            background-color: #a3f2a9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <a href="#secondBox">Go to Second Box</a>
+    </div>
+    <div class="box" id="secondBox"></div>
+    <!-- <h1>This is H1</h1> -->
+    <!-- <p>This is a para 1</p>
+    <p>This is a para 2</p>
+    <p>This is a para 3</p>
+    <p>This is a para 4</p>
+    <a>No href</a>
+    <a href="//google.com" target="_blank">Goooo</a>
+    <a href="//abc.co" target="_blank">ABC</a> -->
+    <!-- <form action="">
+        <input type="text" name="username" class="username"><br>
+        <input type="text" name="fullname" disabled><br>
+        <input type="text" name="name"><br>
+        <input type="text" name="nameofschool"><br>
+        <input type="radio" name="gender" value="m" id="m"> <label for="m">Male</label>
+        <input type="radio" name="gender" value="f" id="f"> <label for="f">Female</label> <br>
+        <button class="btn">SUBMIT</button>
+    </form> -->
+
+</body>
+</html>
