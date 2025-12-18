@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        position: static;
+      }
+      body,
+      html {
+        height: 100%;
+        width: 100%;
+      }
+      body {
+        background: linear-gradient(325deg, #cd30f9, orange);
+      }
+      .main {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        overflow: hidden;
+      }
+      .card {
+        height: 500px;
+        width: 350px;
+        background: white;
+        border-radius: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+      }
+      .top {
+        height: 35%;
+        width: 100%;
+        position: relative;
+      }
+      .cover {
+        height: 100%;
+        width: 100%;
+        background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y292ZXJ8ZW58MHx8MHx8fDA%3D&w=1000&q=80");
+        background-size: cover;
+        background-position: center;
+      }
+      .profile {
+        height: 100px;
+        width: 100px;
+        background-image: url("https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80");
+        background-size: cover;
+        background-position: center;
+        border: 5px solid white;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .bottom {
+        height: 65%;
+        width: 100%;
+        position: relative;
+      }
+      .ri-more-2-fill {
+        font-size: 24px;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+      }
+      .contant{
+        position: relative;
+        top: 60px;
+        width: 100%;
+      }
+      h3 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      p{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: gray;
+      }
+      button{
+        display: block;
+        width: 90%;
+        padding: 10px 0;
+        margin: 20px auto 0 auto;
+        border: none;
+        background: #11b4fa;
+        color: white;
+        font-size: 16px;
+        border-radius: 20px;
+        cursor: pointer;
+        
+      }
+      .bio{
+        margin-top: 20px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="card">
+        <div class="top">
+          <div class="cover"></div>
+          <div class="profile"></div>
+        </div>
+        <div class="bottom">
+          <i class="ri-more-2-fill"></i>
+          <div class="contant">
+            <h3>Jhon Doe</h3>
+            <p>Web Developer</p>
+            <button>follow</button>
+            <p class="bio">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio repellat delectus fuga suscipit voluptatum dicta sint ipsam, odio nam facilis!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
